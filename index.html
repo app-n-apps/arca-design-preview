@@ -1,0 +1,60 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><title>Arca — стиль</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: витрина нумизмата — три варианта столбиком, внутри пара экранов рядом */
+:root{
+  --bg:#f5f2ec; --surface:#fffdf8; --ink:#1d1a15; --muted:#6c6458; --line:#e2dbcf; --gold:#9a6f1e;
+  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#12100d;--surface:#1b1814;--ink:#efe8db;--muted:#a59a88;--line:#2e2922;--gold:#d6a645;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12100d;--surface:#1b1814;--ink:#efe8db;--muted:#a59a88;--line:#2e2922;--gold:#d6a645;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:1080px;margin:0 auto;padding-block:40px 64px;display:grid;gap:40px}
+.intro h1{font-family:var(--display);font-weight:600;font-size:clamp(2.4rem,6vw,3.6rem);line-height:1;margin:0 0 12px;text-wrap:balance}
+.intro h1 small{display:block;font-family:var(--body);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+.intro p{max-width:62ch;color:var(--muted);margin:0}
+.variant{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:20px}
+.variant header{display:flex;gap:16px;align-items:flex-start}
+.letter{font-family:var(--display);font-size:3rem;line-height:.9;color:var(--gold);font-weight:600;min-width:1.2ch}
+h2{font-family:var(--display);font-size:1.8rem;margin:0;font-weight:600;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.variant p{margin:4px 0 0;color:var(--muted);max-width:60ch}
+.badge{font-family:var(--body);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:2px 10px;font-weight:600}
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+figure{margin:0;display:grid;gap:8px}
+figure img{width:100%;max-width:100%;height:auto;border-radius:22px;display:block;border:1px solid var(--line)}
+figcaption{font-size:.85rem;color:var(--muted);text-align:center}
+.notes{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.92rem;display:grid;gap:6px;max-width:70ch}
+.notes strong{color:var(--ink)}
+@media (max-width:520px){.variant{padding:16px}.shots{gap:10px}figure img{border-radius:14px}}
+</style></head><body>
+<main>
+  <div class="intro"><h1><small>Arca · сканер монет · этап 1</small>Выбери стиль</h1>
+  <p>Три направления, у каждого главный экран и карточка монеты. От выбранного нарисуем остальные экраны, онбординг переносим как есть. Макеты сгенерированы Codex 18.10.2026.</p></div>
+  <section class="variant" id="vA">
+  <header><span class="letter">A</span><div><h2>Музей <span class="badge">Рекомендация ИИ</span></h2><p>Тёмный зал, монета на подиуме под софитом, золото только в акцентах. Ближе всего к нашей дизайн-системе.</p></div></header>
+  <div class="shots">
+    <figure><img src="variant-A-home-v1.jpg" alt="Вариант A: главный экран" loading="lazy"><figcaption>Главный экран</figcaption></figure>
+    <figure><img src="variant-A-coin-v1.jpg" alt="Вариант A: карточка монеты" loading="lazy"><figcaption>Карточка монеты</figcaption></figure>
+  </div>
+</section><section class="variant" id="vB">
+  <header><span class="letter">B</span><div><h2>Стекло Apple </h2><p>Светлый мрамор, матовые стеклянные карточки, дневной свет. Сильнее всех отличается от тёмных конкурентов.</p></div></header>
+  <div class="shots">
+    <figure><img src="variant-B-home-v1.jpg" alt="Вариант B: главный экран" loading="lazy"><figcaption>Главный экран</figcaption></figure>
+    <figure><img src="variant-B-coin-v1.jpg" alt="Вариант B: карточка монеты" loading="lazy"><figcaption>Карточка монеты</figcaption></figure>
+  </div>
+</section><section class="variant" id="vC">
+  <header><span class="letter">C</span><div><h2>Альбом </h2><p>Бархатный лоток, дерево, латунь, шрифт с засечками. Больше всего фотографий, экран плотный.</p></div></header>
+  <div class="shots">
+    <figure><img src="variant-C-home-v1.jpg" alt="Вариант C: главный экран" loading="lazy"><figcaption>Главный экран</figcaption></figure>
+    <figure><img src="variant-C-coin-v1.jpg" alt="Вариант C: карточка монеты" loading="lazy"><figcaption>Карточка монеты</figcaption></figure>
+  </div>
+</section>
+  <div class="notes">
+    <div><strong>Надписи на мелких монетах</strong> местами бессмысленные. Это огрех генерации. В приложении будут настоящие фото.</div>
+    <div><strong>Стекло</strong> на картинках плоское. Настоящий эффект Liquid Glass появится в коде на SwiftUI.</div>
+    <div><strong>Обязательные оговорки</strong> («Not an appraisal») на макетах не нарисованы, в коде они будут.</div>
+  </div>
+</main></body></html>
