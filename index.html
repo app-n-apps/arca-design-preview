@@ -29,11 +29,27 @@ figcaption{font-size:.85rem;color:var(--muted);text-align:center}
 .notes{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.92rem;display:grid;gap:6px;max-width:70ch}
 .notes strong{color:var(--ink)}
 @media (max-width:520px){.variant{padding:16px}.shots{gap:10px}figure img{border-radius:14px}}
+.all{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:20px}
+.all h2{font-size:2.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
+.checks{display:grid;gap:6px;color:var(--muted);font-size:.92rem;max-width:72ch}
+.checks strong{color:var(--ink)}
+.divider{font-family:var(--display);font-size:1.6rem;margin:8px 0 -16px}
+@media (max-width:520px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.all{padding:16px}}
 </style></head><body>
 <main>
-  <div class="intro"><h1><small>Arca · сканер монет · этап 1</small>Выбери стиль</h1>
-  <p>Шесть направлений, у каждого главный экран и карточка монеты. A–C — первая партия, D–F — по трендам Dribbble и Behance 2026. От выбранного нарисуем остальные экраны, онбординг переносим как есть. Макеты сгенерированы Codex 18.10.2026.</p></div>
-  <section class="variant" id="vA">
+  <div class="intro"><h1><small>Arca · сканер монет · дизайн на согласование</small>Дизайн экранов</h1>
+  <p>Основа — стиль E. Ниже все экраны и шесть вариантов, из которых выбирали: A–C первая партия, D–F по трендам Dribbble и Behance 2026. Макеты сгенерированы Codex 18.10.2026.</p></div>
+  <section class="all" id="E-all">
+  <header><h2>Стиль E «Тёмный бенто» — все экраны <span class="badge">Выбран</span></h2>
+  <p>15 экранов в порядке пути пользователя. Онбординг переносится из текущей версии, поэтому его здесь нет. Раскладка общая для всех экранов: позже на неё ляжет скин «Музей» (A), переключатель тем есть в настройках.</p></header>
+  <div class="grid"><figure><img src="e/splash-v1.jpg" alt="Заставка" loading="lazy"><figcaption>1. Заставка</figcaption></figure><figure><img src="e/home-v2.jpg" alt="Главная" loading="lazy"><figcaption>2. Главная</figcaption></figure><figure><img src="e/scan-v1.jpg" alt="Камера" loading="lazy"><figcaption>3. Камера</figcaption></figure><figure><img src="e/scan-processing-v1.jpg" alt="Распознавание" loading="lazy"><figcaption>4. Распознавание</figcaption></figure><figure><img src="e/scan-candidates-v1.jpg" alt="Выбор варианта" loading="lazy"><figcaption>5. Выбор варианта</figcaption></figure><figure><img src="e/coin-v1.jpg" alt="Карточка монеты" loading="lazy"><figcaption>6. Карточка монеты</figcaption></figure><figure><img src="e/grade-v1.jpg" alt="Объяснение грейда" loading="lazy"><figcaption>7. Объяснение грейда</figcaption></figure><figure><img src="e/collection-v2.jpg" alt="Коллекция" loading="lazy"><figcaption>8. Коллекция</figcaption></figure><figure><img src="e/collection-history-v1.jpg" alt="Стоимость коллекции" loading="lazy"><figcaption>9. Стоимость коллекции</figcaption></figure><figure><img src="e/catalog-v2.jpg" alt="Каталог" loading="lazy"><figcaption>10. Каталог</figcaption></figure><figure><img src="e/history-v2.jpg" alt="История сканов" loading="lazy"><figcaption>11. История сканов</figcaption></figure><figure><img src="e/batch-result-v1.jpg" alt="Скан пачкой" loading="lazy"><figcaption>12. Скан пачкой</figcaption></figure><figure><img src="e/paywall-v1.jpg" alt="Пейволл" loading="lazy"><figcaption>13. Пейволл</figcaption></figure><figure><img src="e/settings-v2.jpg" alt="Настройки" loading="lazy"><figcaption>14. Настройки</figcaption></figure><figure><img src="e/system-error-v2.jpg" alt="Ошибка / нет сети" loading="lazy"><figcaption>15. Ошибка / нет сети</figcaption></figure></div>
+  <div class="checks">
+    <div><strong>Пейволл и настройки</strong> нарисованы по чек-листу из 20 прошлых отказов Apple: крестик сразу, цена рядом с кнопкой, «Continue without subscription», Restore, Terms и Privacy, текст про автопродление, без таймеров и значков оплаты.</div>
+    <div><strong>Мелочи для кода, не для перерисовки:</strong> подписи на главной слегка срезают низ монет, в каталоге на Peace Dollar «TRUST» вместо «TRVST», цвет процента уверенности в скане пачкой разный без смысла.</div>
+  </div>
+</section>
+<h2 class="divider">Как выбирали стиль</h2><section class="variant" id="vA">
   <header><span class="letter">A</span><div><h2>Музей </h2><p>Тёмный зал, монета на подиуме под софитом, золото только в акцентах. Ближе всего к нашей дизайн-системе.</p></div></header>
   <div class="shots">
     <figure><img src="variant-A-home-v1.jpg" alt="Вариант A: главный экран" loading="lazy"><figcaption>Главный экран</figcaption></figure>
